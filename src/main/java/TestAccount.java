@@ -34,10 +34,17 @@ public class TestAccount {
 
         sa.withdraw(sa.getBalance() * 0.1);
         ca.withdraw(ca.getBalance() * 0.1);
-        System.out.println(sa);
-        System.out.println(ca);
+//        System.out.println(sa);
+//        System.out.println(ca);
 
-        //ca.toString();
+
+        System.out.println();
+        System.out.println("Account balance after interest rate");
+        System.out.println();
+        System.out.println(sa.addInterestRate(0.1));
+        System.out.println(ca.addInterestRate(0.15));
+//        System.out.println(sa.getBalance());
+//        System.out.println(ca.getBalance());
 
     }
 }
